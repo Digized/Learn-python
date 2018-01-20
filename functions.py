@@ -1,11 +1,15 @@
-def sum(a, b):
-    return a + b
+x = 5
+def sum(a,b):
+    return (x + b, a) 
 
-print(str(sum(5,2)))
+def editX(a):
+    global x 
+    x = a
 
-x = 9
-y = 21
+sum(20, 2) #7
 
-print(str(sum(x,y)))
+editX(20)
 
+print(sum(20, 20)) #
 
+print(sum(1,2))
